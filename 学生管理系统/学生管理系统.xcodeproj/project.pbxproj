@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1815B1FF2119B864002FB5E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815B1FE2119B864002FB5E5 /* AppDelegate.m */; };
+		1815B2052119B864002FB5E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1815B2032119B864002FB5E5 /* Main.storyboard */; };
+		1815B2072119B86B002FB5E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1815B2062119B86B002FB5E5 /* Assets.xcassets */; };
+		1815B20A2119B86B002FB5E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1815B2082119B86B002FB5E5 /* LaunchScreen.storyboard */; };
+		1815B20D2119B86B002FB5E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815B20C2119B86B002FB5E5 /* main.m */; };
+		1815B21C2119BB52002FB5E5 /* LandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815B21B2119BB52002FB5E5 /* LandViewController.m */; };
+		1815B21F2119BB65002FB5E5 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815B21E2119BB65002FB5E5 /* RegisterViewController.m */; };
+		1815B2222119C51F002FB5E5 /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815B2212119C51F002FB5E5 /* ShowViewController.m */; };
+		18905A06211A7378007A49B0 /* StudentNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905A05211A7378007A49B0 /* StudentNSObject.m */; };
+		18905A09211A73F9007A49B0 /* StudentSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905A08211A73F9007A49B0 /* StudentSystem.m */; };
+		18905A10211A8489007A49B0 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905A0F211A8489007A49B0 /* AddViewController.m */; };
+		18905A13211A8499007A49B0 /* DeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905A12211A8499007A49B0 /* DeleteViewController.m */; };
+		18905A16211A84AE007A49B0 /* ModifierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905A15211A84AE007A49B0 /* ModifierViewController.m */; };
+		18905A19211A84B9007A49B0 /* SeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905A18211A84B9007A49B0 /* SeekViewController.m */; };
+		18905A1D211A8623007A49B0 /* AllNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905A1C211A8623007A49B0 /* AllNavigationController.m */; };
+		18905A21211ACEAD007A49B0 /* JKWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18905A20211ACEAD007A49B0 /* JKWTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1815B1FA2119B864002FB5E5 /* 学生管理系统.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "学生管理系统.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1815B1FD2119B864002FB5E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1815B1FE2119B864002FB5E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1815B2042119B864002FB5E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1815B2062119B86B002FB5E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1815B2092119B86B002FB5E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1815B20B2119B86B002FB5E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1815B20C2119B86B002FB5E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1815B21A2119BB52002FB5E5 /* LandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LandViewController.h; sourceTree = "<group>"; };
+		1815B21B2119BB52002FB5E5 /* LandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LandViewController.m; sourceTree = "<group>"; };
+		1815B21D2119BB65002FB5E5 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		1815B21E2119BB65002FB5E5 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		1815B2202119C51F002FB5E5 /* ShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
+		1815B2212119C51F002FB5E5 /* ShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
+		18905A04211A7378007A49B0 /* StudentNSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentNSObject.h; sourceTree = "<group>"; };
+		18905A05211A7378007A49B0 /* StudentNSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentNSObject.m; sourceTree = "<group>"; };
+		18905A07211A73F9007A49B0 /* StudentSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentSystem.h; sourceTree = "<group>"; };
+		18905A08211A73F9007A49B0 /* StudentSystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentSystem.m; sourceTree = "<group>"; };
+		18905A0E211A8489007A49B0 /* AddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		18905A0F211A8489007A49B0 /* AddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		18905A11211A8499007A49B0 /* DeleteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteViewController.h; sourceTree = "<group>"; };
+		18905A12211A8499007A49B0 /* DeleteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteViewController.m; sourceTree = "<group>"; };
+		18905A14211A84AE007A49B0 /* ModifierViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModifierViewController.h; sourceTree = "<group>"; };
+		18905A15211A84AE007A49B0 /* ModifierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModifierViewController.m; sourceTree = "<group>"; };
+		18905A17211A84B9007A49B0 /* SeekViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeekViewController.h; sourceTree = "<group>"; };
+		18905A18211A84B9007A49B0 /* SeekViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeekViewController.m; sourceTree = "<group>"; };
+		18905A1B211A8623007A49B0 /* AllNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllNavigationController.h; sourceTree = "<group>"; };
+		18905A1C211A8623007A49B0 /* AllNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllNavigationController.m; sourceTree = "<group>"; };
+		18905A1F211ACEAD007A49B0 /* JKWTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKWTableViewCell.h; sourceTree = "<group>"; };
+		18905A20211ACEAD007A49B0 /* JKWTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKWTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1815B1F72119B864002FB5E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1815B1F12119B864002FB5E5 = {
+			isa = PBXGroup;
+			children = (
+				1815B1FC2119B864002FB5E5 /* 学生管理系统 */,
+				1815B1FB2119B864002FB5E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1815B1FB2119B864002FB5E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1815B1FA2119B864002FB5E5 /* 学生管理系统.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1815B1FC2119B864002FB5E5 /* 学生管理系统 */ = {
+			isa = PBXGroup;
+			children = (
+				1815B1FD2119B864002FB5E5 /* AppDelegate.h */,
+				1815B1FE2119B864002FB5E5 /* AppDelegate.m */,
+				1815B2032119B864002FB5E5 /* Main.storyboard */,
+				1815B2062119B86B002FB5E5 /* Assets.xcassets */,
+				1815B2082119B86B002FB5E5 /* LaunchScreen.storyboard */,
+				1815B20B2119B86B002FB5E5 /* Info.plist */,
+				1815B20C2119B86B002FB5E5 /* main.m */,
+				18905A1E211ACE91007A49B0 /* JKWUITableViewCell */,
+				18905A1A211A85FE007A49B0 /* UINavigationFinder */,
+				1815B2182119BAB2002FB5E5 /* LandAndRegisterFinder */,
+				1815B2152119BAB2002FB5E5 /* ShowFinder */,
+				1815B2142119BAB2002FB5E5 /* AddFinder */,
+				1815B2172119BAB2002FB5E5 /* DeleteFinder */,
+				1815B2132119BAB2002FB5E5 /* ModifierFinder */,
+				1815B2162119BAB2002FB5E5 /* SeekFinder */,
+				1815B2192119BAB2002FB5E5 /* LogicFinder */,
+			);
+			path = "学生管理系统";
+			sourceTree = "<group>";
+		};
+		1815B2132119BAB2002FB5E5 /* ModifierFinder */ = {
+			isa = PBXGroup;
+			children = (
+				18905A14211A84AE007A49B0 /* ModifierViewController.h */,
+				18905A15211A84AE007A49B0 /* ModifierViewController.m */,
+			);
+			path = ModifierFinder;
+			sourceTree = "<group>";
+		};
+		1815B2142119BAB2002FB5E5 /* AddFinder */ = {
+			isa = PBXGroup;
+			children = (
+				18905A0E211A8489007A49B0 /* AddViewController.h */,
+				18905A0F211A8489007A49B0 /* AddViewController.m */,
+			);
+			path = AddFinder;
+			sourceTree = "<group>";
+		};
+		1815B2152119BAB2002FB5E5 /* ShowFinder */ = {
+			isa = PBXGroup;
+			children = (
+				1815B2202119C51F002FB5E5 /* ShowViewController.h */,
+				1815B2212119C51F002FB5E5 /* ShowViewController.m */,
+			);
+			path = ShowFinder;
+			sourceTree = "<group>";
+		};
+		1815B2162119BAB2002FB5E5 /* SeekFinder */ = {
+			isa = PBXGroup;
+			children = (
+				18905A17211A84B9007A49B0 /* SeekViewController.h */,
+				18905A18211A84B9007A49B0 /* SeekViewController.m */,
+			);
+			path = SeekFinder;
+			sourceTree = "<group>";
+		};
+		1815B2172119BAB2002FB5E5 /* DeleteFinder */ = {
+			isa = PBXGroup;
+			children = (
+				18905A11211A8499007A49B0 /* DeleteViewController.h */,
+				18905A12211A8499007A49B0 /* DeleteViewController.m */,
+			);
+			path = DeleteFinder;
+			sourceTree = "<group>";
+		};
+		1815B2182119BAB2002FB5E5 /* LandAndRegisterFinder */ = {
+			isa = PBXGroup;
+			children = (
+				1815B21A2119BB52002FB5E5 /* LandViewController.h */,
+				1815B21B2119BB52002FB5E5 /* LandViewController.m */,
+				1815B21D2119BB65002FB5E5 /* RegisterViewController.h */,
+				1815B21E2119BB65002FB5E5 /* RegisterViewController.m */,
+			);
+			path = LandAndRegisterFinder;
+			sourceTree = "<group>";
+		};
+		1815B2192119BAB2002FB5E5 /* LogicFinder */ = {
+			isa = PBXGroup;
+			children = (
+				18905A04211A7378007A49B0 /* StudentNSObject.h */,
+				18905A05211A7378007A49B0 /* StudentNSObject.m */,
+				18905A07211A73F9007A49B0 /* StudentSystem.h */,
+				18905A08211A73F9007A49B0 /* StudentSystem.m */,
+			);
+			path = LogicFinder;
+			sourceTree = "<group>";
+		};
+		18905A1A211A85FE007A49B0 /* UINavigationFinder */ = {
+			isa = PBXGroup;
+			children = (
+				18905A1B211A8623007A49B0 /* AllNavigationController.h */,
+				18905A1C211A8623007A49B0 /* AllNavigationController.m */,
+			);
+			path = UINavigationFinder;
+			sourceTree = "<group>";
+		};
+		18905A1E211ACE91007A49B0 /* JKWUITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				18905A1F211ACEAD007A49B0 /* JKWTableViewCell.h */,
+				18905A20211ACEAD007A49B0 /* JKWTableViewCell.m */,
+			);
+			path = JKWUITableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1815B1F92119B864002FB5E5 /* 学生管理系统 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1815B2102119B86B002FB5E5 /* Build configuration list for PBXNativeTarget "学生管理系统" */;
+			buildPhases = (
+				1815B1F62119B864002FB5E5 /* Sources */,
+				1815B1F72119B864002FB5E5 /* Frameworks */,
+				1815B1F82119B864002FB5E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "学生管理系统";
+			productName = "学生管理系统";
+			productReference = 1815B1FA2119B864002FB5E5 /* 学生管理系统.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1815B1F22119B864002FB5E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "姜凯文";
+				TargetAttributes = {
+					1815B1F92119B864002FB5E5 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1815B1F52119B864002FB5E5 /* Build configuration list for PBXProject "学生管理系统" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1815B1F12119B864002FB5E5;
+			productRefGroup = 1815B1FB2119B864002FB5E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1815B1F92119B864002FB5E5 /* 学生管理系统 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1815B1F82119B864002FB5E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1815B20A2119B86B002FB5E5 /* LaunchScreen.storyboard in Resources */,
+				1815B2072119B86B002FB5E5 /* Assets.xcassets in Resources */,
+				1815B2052119B864002FB5E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1815B1F62119B864002FB5E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1815B20D2119B86B002FB5E5 /* main.m in Sources */,
+				1815B2222119C51F002FB5E5 /* ShowViewController.m in Sources */,
+				1815B1FF2119B864002FB5E5 /* AppDelegate.m in Sources */,
+				18905A06211A7378007A49B0 /* StudentNSObject.m in Sources */,
+				18905A21211ACEAD007A49B0 /* JKWTableViewCell.m in Sources */,
+				18905A09211A73F9007A49B0 /* StudentSystem.m in Sources */,
+				1815B21C2119BB52002FB5E5 /* LandViewController.m in Sources */,
+				1815B21F2119BB65002FB5E5 /* RegisterViewController.m in Sources */,
+				18905A16211A84AE007A49B0 /* ModifierViewController.m in Sources */,
+				18905A10211A8489007A49B0 /* AddViewController.m in Sources */,
+				18905A1D211A8623007A49B0 /* AllNavigationController.m in Sources */,
+				18905A19211A84B9007A49B0 /* SeekViewController.m in Sources */,
+				18905A13211A8499007A49B0 /* DeleteViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1815B2032119B864002FB5E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1815B2042119B864002FB5E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1815B2082119B86B002FB5E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1815B2092119B86B002FB5E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1815B20E2119B86B002FB5E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1815B20F2119B86B002FB5E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1815B2112119B86B002FB5E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "学生管理系统/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jkw.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1815B2122119B86B002FB5E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "学生管理系统/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jkw.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1815B1F52119B864002FB5E5 /* Build configuration list for PBXProject "学生管理系统" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1815B20E2119B86B002FB5E5 /* Debug */,
+				1815B20F2119B86B002FB5E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1815B2102119B86B002FB5E5 /* Build configuration list for PBXNativeTarget "学生管理系统" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1815B2112119B86B002FB5E5 /* Debug */,
+				1815B2122119B86B002FB5E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1815B1F22119B864002FB5E5 /* Project object */;
+}
