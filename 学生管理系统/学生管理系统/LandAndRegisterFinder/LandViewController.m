@@ -29,26 +29,34 @@
     _accountAndPasswordNSM = [[NSMutableArray alloc] init];
     [_accountAndPasswordNSM addObjectsFromArray:@[@[@"123", @"456"], @[@"789", @"888"],]];
     
-    self.view.backgroundColor = [UIColor colorWithRed:0.97f green:0.51f blue:0.06f alpha:1.00f];
+    //self.view.backgroundColor = [UIColor whiteColor];
     
-    UILabel *welcomeLabel = [[UILabel alloc] initWithFrame:CGRectMake(JKWDeviceWidth * 0.2, JKWDeviceHeight * 0.2, JKWDeviceWidth * 0.6, JKWDeviceHeight * 0.3)];
-    welcomeLabel.font = [UIFont systemFontOfSize:55];
-    welcomeLabel.numberOfLines = 0;
-    welcomeLabel.text = @"欢    迎";
-    welcomeLabel.textAlignment = NSTextAlignmentCenter;
-    welcomeLabel.textColor = [UIColor colorWithRed:0.37f green:0.39f blue:0.61f alpha:1.00f];
-    [self.view addSubview:welcomeLabel];
+    UIImage *backGroundImage = [UIImage imageNamed:@"land.jpg"];
+    self.view.layer.contents = (id) backGroundImage.CGImage;
+    self.view.layer.backgroundColor = [UIColor clearColor].CGColor;
+    
+//    UILabel *welcomeLabel = [[UILabel alloc] initWithFrame:CGRectMake(JKWDeviceWidth * 0.2, JKWDeviceHeight * 0.2, JKWDeviceWidth * 0.6, JKWDeviceHeight * 0.3)];
+//    welcomeLabel.font = [UIFont systemFontOfSize:55];
+//    welcomeLabel.numberOfLines = 0;
+//    welcomeLabel.text = @"欢    迎";
+//    welcomeLabel.textAlignment = NSTextAlignmentCenter;
+//    welcomeLabel.textColor = [UIColor colorWithRed:0.37f green:0.39f blue:0.61f alpha:1.00f];
+//    [self.view addSubview:welcomeLabel];
     
     _accountTextField = [[UITextField alloc] initWithFrame:CGRectMake(JKWDeviceWidth * 0.2, JKWDeviceHeight * 0.5, JKWDeviceWidth * 0.6, JKWDeviceWidth * 0.1)];
     _accountTextField.backgroundColor = [UIColor whiteColor];
     _accountTextField.placeholder = @"请输入您的账号";
-    _accountTextField.borderStyle = UITextBorderStyleBezel;
+    _accountTextField.borderStyle = UITextBorderStyleNone;
+    _accountTextField.delegate = self;
+    _accountTextField.backgroundColor = [UIColor colorWithRed:0.82f green:0.82f blue:0.82f alpha:1.00f];
     [self.view addSubview:_accountTextField];
     
     _passwordTextField = [[UITextField alloc] initWithFrame:CGRectMake(JKWDeviceWidth * 0.2, JKWDeviceHeight * 0.6, JKWDeviceWidth * 0.6, JKWDeviceWidth * 0.1)];
-    _passwordTextField.backgroundColor = [UIColor whiteColor];
+    _passwordTextField.backgroundColor = [UIColor colorWithRed:0.82f green:0.82f blue:0.82f alpha:1.00f];
     _passwordTextField.placeholder = @"请输入您的密码";
-    _passwordTextField.borderStyle = UITextBorderStyleBezel;
+    _passwordTextField.borderStyle = UITextBorderStyleNone;
+    _passwordTextField.delegate = self;
+    _passwordTextField.secureTextEntry = YES;
     [self.view addSubview:_passwordTextField];
     
     UIButton *landButton = [[UIButton alloc] initWithFrame:CGRectMake(JKWDeviceWidth * 0.25, JKWDeviceHeight * 0.71, JKWDeviceWidth * 0.2, JKWDeviceWidth * 0.1)];
@@ -102,6 +110,7 @@
     [_accountAndPasswordNSM addObject:tempNSM];
 }
 - (void) touchLand {
+    [self.view endEditing:YES];
     for (int i = 0; i < _accountAndPasswordNSM.count; i++) {
         if ([_accountTextField.text isEqualToString:_accountAndPasswordNSM[i][0]] && [_passwordTextField.text isEqualToString:_accountAndPasswordNSM[i][1]]) {
             ShowViewController *showViewController = [[ShowViewController alloc] init];
@@ -116,9 +125,11 @@
 }
 
 - (void) touchRegister {
+    [self.view endEditing:YES];
     RegisterViewController *registerViewController = [[RegisterViewController alloc] init];
     registerViewController.registerDelegate = self;
     [self presentViewController:registerViewController animated:YES completion:nil];
+    registerViewController.accountAndPasswordNSM = _accountAndPasswordNSM;
 }
 
 - (void)didReceiveMemoryWarning {

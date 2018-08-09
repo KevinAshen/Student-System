@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "StudentSystem.h"
+#import "StudentNSObject.h"
+@protocol DeleteViewControllerDelegate <NSObject>
+- (void) passDelegateNSM:(NSMutableArray *) newNSM;
+@end
 @interface DeleteViewController : UIViewController
 
+@property (nonatomic, strong) StudentSystem *studentSystem;
+@property (nonatomic, strong) StudentNSObject *studentNSO;
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *temp1;
+@property (nonatomic, strong) UITextField *idTextField;
+
+@property (nonatomic, weak)id <DeleteViewControllerDelegate> deleteViewControllerDelegate;
 @end

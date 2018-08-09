@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "StudentSystem.h"
 #import "StudentNSObject.h"
+@protocol AddViewControllerDelegate <NSObject>
+-(void) passAddNSM:(NSMutableArray *) newNSM;
+@end
 @interface AddViewController : UIViewController
 
 @property (nonatomic, strong) StudentSystem *studentSystem;
@@ -23,4 +26,5 @@
 @property (nonatomic, strong) UITextField *scoreTextField;
 @property (nonatomic, strong) UITableView *tableView;
 
+@property (nonatomic, weak)id <AddViewControllerDelegate> addViewControllerDelegate;
 @end

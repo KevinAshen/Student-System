@@ -14,6 +14,11 @@
 @property (nonatomic, strong) NSMutableArray *studentNSM;
 
 - (BOOL) addStudentArray:(StudentNSObject *)tempStudent;
-    
+
+- (void) deleteStudentArray:(int)deleteStudentID;
+
+- (int) seekStudentInArray:(NSString *)studentID;
+
+- (BOOL) modifierStudentArray:(StudentNSObject *)tempStudent modifierStudentCount:(int) NSMcount;
 
 @end

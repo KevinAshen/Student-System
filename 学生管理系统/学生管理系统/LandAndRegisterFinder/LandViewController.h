@@ -12,6 +12,6 @@
 
 @property (nonatomic, strong) UITextField *accountTextField;
 @property (nonatomic, strong) UITextField *passwordTextField;
-@property (nonatomic, copy) NSMutableArray *accountAndPasswordNSM;
+@property (nonatomic, strong) NSMutableArray *accountAndPasswordNSM;
 
 @end

@@ -19,27 +19,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _accountAndPasswordNSM = [[NSMutableArray alloc] init];
     
-    self.view.backgroundColor = [UIColor colorWithRed:0.97f green:0.51f blue:0.06f alpha:1.00f];
+    UIImage *backGroundImage = [UIImage imageNamed:@"register1.jpg"];
+    self.view.layer.contents = (id) backGroundImage.CGImage;
+    self.view.layer.backgroundColor = [UIColor clearColor].CGColor;
     
-    UILabel *welcomeLabel = [[UILabel alloc] initWithFrame:CGRectMake(JKWDeviceWidth * 0.2, JKWDeviceHeight * 0.2, JKWDeviceWidth * 0.6, JKWDeviceHeight * 0.3)];
-    welcomeLabel.font = [UIFont systemFontOfSize:55];
-    welcomeLabel.numberOfLines = 0;
-    welcomeLabel.text = @"注    册";
-    welcomeLabel.textAlignment = NSTextAlignmentCenter;
-    welcomeLabel.textColor = [UIColor colorWithRed:0.37f green:0.39f blue:0.61f alpha:1.00f];
-    [self.view addSubview:welcomeLabel];
+//    UILabel *welcomeLabel = [[UILabel alloc] initWithFrame:CGRectMake(JKWDeviceWidth * 0.2, JKWDeviceHeight * 0.2, JKWDeviceWidth * 0.6, JKWDeviceHeight * 0.3)];
+//    welcomeLabel.font = [UIFont systemFontOfSize:55];
+//    welcomeLabel.numberOfLines = 0;
+//    welcomeLabel.text = @"注    册";
+//    welcomeLabel.textAlignment = NSTextAlignmentCenter;
+//    welcomeLabel.textColor = [UIColor colorWithRed:0.37f green:0.39f blue:0.61f alpha:1.00f];
+//    [self.view addSubview:welcomeLabel];
     
     _accountTextField = [[UITextField alloc] initWithFrame:CGRectMake(JKWDeviceWidth * 0.2, JKWDeviceHeight * 0.5, JKWDeviceWidth * 0.6, JKWDeviceWidth * 0.1)];
-    _accountTextField.backgroundColor = [UIColor whiteColor];
+    _accountTextField.backgroundColor = [UIColor colorWithRed:0.82f green:0.82f blue:0.82f alpha:1.00f];
     _accountTextField.placeholder = @"请输入您的账号";
-    _accountTextField.borderStyle = UIButtonTypeRoundedRect;
+    _accountTextField.borderStyle = UITextBorderStyleNone;
+    _accountTextField.delegate = self;
     [self.view addSubview:_accountTextField];
     
     _passwordTextField = [[UITextField alloc] initWithFrame:CGRectMake(JKWDeviceWidth * 0.2, JKWDeviceHeight * 0.6, JKWDeviceWidth * 0.6, JKWDeviceWidth * 0.1)];
-    _passwordTextField.backgroundColor = [UIColor whiteColor];
+    _passwordTextField.backgroundColor = [UIColor colorWithRed:0.82f green:0.82f blue:0.82f alpha:1.00f];
     _passwordTextField.placeholder = @"请输入您的密码";
-    _passwordTextField.borderStyle = UIButtonTypeRoundedRect;
+    _passwordTextField.borderStyle = UITextBorderStyleNone;
+    _passwordTextField.delegate = self;
+    _passwordTextField.secureTextEntry = YES;
     [self.view addSubview:_passwordTextField];
     
     UIButton *returnLandButton = [[UIButton alloc] initWithFrame:CGRectMake(JKWDeviceWidth * 0.3, JKWDeviceHeight * 0.71, JKWDeviceWidth * 0.4, JKWDeviceWidth * 0.1)];
@@ -79,16 +85,31 @@
 
 - (void) returnLand {
     [self.view endEditing:YES];
+    NSLog(@"first %lu", _accountAndPasswordNSM.count);
     if (_accountTextField.text.length == 0 || _passwordTextField.text.length == 0) {
         UIAlertController *faultAlertController = [UIAlertController alertControllerWithTitle:@"注册失败" message:@"输入不得为空" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *returnAction = [UIAlertAction actionWithTitle:@"返回" style:UIAlertActionStyleCancel handler:nil];
         [faultAlertController addAction:returnAction];
         [self presentViewController:faultAlertController animated:YES completion:nil];
-    } else {
-        [self dismissViewControllerAnimated:YES completion:nil];
-        if ([_registerDelegate respondsToSelector:@selector(passAccount:passPassword:)]) {
-            [_registerDelegate passAccount:_accountTextField.text passPassword:_passwordTextField.text];
+        return;
+    }
+    for (int i = 0; i < _accountAndPasswordNSM.count; i++) {
+        if ([_accountTextField.text isEqualToString:_accountAndPasswordNSM[i][0]]) {
+            UIAlertController *faultAlertController = [UIAlertController alertControllerWithTitle:@"注册失败" message:@"账户重复" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *returnAction = [UIAlertAction actionWithTitle:@"返回" style:UIAlertActionStyleCancel handler:nil];
+            [faultAlertController addAction:returnAction];
+            [self presentViewController:faultAlertController animated:YES completion:nil];
+            return;
         }
+    }
+    NSMutableArray *tempNSM = [[NSMutableArray alloc] init];
+    [tempNSM addObject:_accountTextField.text];
+    [tempNSM addObject:_passwordTextField.text];
+    [_accountAndPasswordNSM addObject:tempNSM];
+    NSLog(@"second %lu", _accountAndPasswordNSM.count);
+    [self dismissViewControllerAnimated:YES completion:nil];
+    if ([_registerDelegate respondsToSelector:@selector(passAccount:passPassword:)]) {
+        [_registerDelegate passAccount:_accountTextField.text passPassword:_passwordTextField.text];
     }
 }
 

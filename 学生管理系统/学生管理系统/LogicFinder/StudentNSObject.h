@@ -17,4 +17,5 @@
 @property (nonatomic, assign) float score;
 
 - (void) printStudent;
+- (BOOL)checkIsAllNum:(NSString *)myString;
 @end

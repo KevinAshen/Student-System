@@ -17,6 +17,7 @@
 
 @property (nonatomic, strong) UITextField *accountTextField;
 @property (nonatomic, strong) UITextField *passwordTextField;
+@property (nonatomic, strong) NSMutableArray *accountAndPasswordNSM;
 
 @property (nonatomic, weak)id <RegisterViewControllerDelegate> registerDelegate;
 
